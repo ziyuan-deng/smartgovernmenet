@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding" defaultCharsetForPropertiesFiles="UTF-8">
+    <file url="file://$PROJECT_DIR$" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/smartgovernment_apigateway" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/smartgovernment_auth" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/smartgovernment_common" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/smartgovernment_filemanagecentre" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/smartgovernment_messagecentre" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/smartgovernment_model" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/smartgovernment_sglog" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/smartgovernment_utils" charset="UTF-8" />
+    <file url="PROJECT" charset="UTF-8" />
+  </component>
+</project>

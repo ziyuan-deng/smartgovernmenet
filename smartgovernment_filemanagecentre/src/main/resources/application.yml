@@ -1,0 +1,7 @@
+server:
+  port: 12000
+spring:
+  application:
+    name: smartgovernment-filemanagecentre
+  profiles:
+    active: test

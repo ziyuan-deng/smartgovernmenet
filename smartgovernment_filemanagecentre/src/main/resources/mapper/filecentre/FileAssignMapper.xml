@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.neco.filemanage.mapper.FileAssignMapper" >
+  <resultMap id="BaseResultMap" type="com.neco.filemanagecentre.model.FileAssignInfo" >
+    <id column="id" property="id" jdbcType="VARCHAR" />
+    <result column="company_id" property="companyId" jdbcType="VARCHAR" />
+    <result column="company_name" property="companyName" jdbcType="VARCHAR" />
+    <result column="app_id" property="appId" jdbcType="VARCHAR" />
+    <result column="app_name" property="appName" jdbcType="VARCHAR" />
+    <result column="assign_size" property="assignSize" jdbcType="BIGINT" />
+    <result column="used_size" property="usedSize" jdbcType="BIGINT" />
+    <result column="defaul_save_date" property="defaulSaveDate" jdbcType="INTEGER" />
+    <result column="upload_status" property="uploadStatus" jdbcType="TINYINT" />
+    <result column="create_time" property="createTime" jdbcType="TIMESTAMP" />
+    <result column="update_time" property="updateTime" jdbcType="TIMESTAMP" />
+  </resultMap>
+  
+  <sql id="Base_Column_List" >
+    id, company_id, company_name, app_id, app_name, assign_size, used_size, defaul_save_date, 
+    upload_status, create_time, update_time
+  </sql>
+
+  <select id="selectParamData" parameterType="java.util.Map" resultMap="BaseResultMap">
+      select
+      <if test="distinct" >
+        distinct
+      </if>
+      <include refid="Base_Column_List" />
+      from t_filecentre_fileassigninfo
+      where 1=1
+      <if test="companyId != null and companyId != ''">
+        AND company_id = #{companyId}
+      </if>
+      <if test="appId != null and appId != ''">
+        AND app_id = #{appId}
+      </if>
+      <if test="uploadStatus != null">
+        AND upload_status = #{uploadStatus}
+      </if>
+  </select>
+ 
+</mapper>

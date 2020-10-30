@@ -1,0 +1,14 @@
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+com.neco.sglog.config.SgLogAutoConfiguration 
+
+
+
+
+
+
+
+
+
+
+
+

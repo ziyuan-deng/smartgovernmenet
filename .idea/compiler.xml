@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="smartgovernment_apigateway" />
+        <module name="smartgovernment_auth" />
+        <module name="smartgovernment_common" />
+        <module name="smartgovernment_filemanagecentre" />
+        <module name="smartgovernment_messagecentre" />
+        <module name="smartgovernment_model" />
+        <module name="smartgovernment_sglog" />
+        <module name="smartgovernment_utils" />
+      </profile>
+    </annotationProcessing>
+  </component>
+</project>

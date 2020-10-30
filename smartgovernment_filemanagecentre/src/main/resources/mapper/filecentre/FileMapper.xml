@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.neco.filemanage.mapper.FileMapper" >
+  <resultMap id="BaseResultMap" type="com.neco.filemanagecentre.model.CentreFileInfo" >
+    <id column="id" property="id" jdbcType="VARCHAR" />
+    <result column="folder_id" property="folderId" jdbcType="VARCHAR" />
+    <result column="company_id" property="companyId" jdbcType="VARCHAR" />
+    <result column="company_name" property="companyName" jdbcType="VARCHAR" />
+    <result column="department_id" property="departmentId" jdbcType="VARCHAR" />
+    <result column="department_name" property="departmentName" jdbcType="VARCHAR" />
+    <result column="app_id" property="appId" jdbcType="VARCHAR" />
+    <result column="postfix" property="postfix" jdbcType="VARCHAR" />
+    <result column="file_type" property="fileType" jdbcType="TINYINT" />
+    <result column="mime_type" property="mimeType" jdbcType="VARCHAR" />
+    <result column="file_size" property="fileSize" jdbcType="BIGINT" />
+    <result column="visit_count" property="visitCount" jdbcType="INTEGER" />
+    <result column="download_count" property="downloadCount" jdbcType="INTEGER" />
+    <result column="url" property="url" jdbcType="VARCHAR" />
+    <result column="file_name" property="fileName" jdbcType="VARCHAR" />
+    <result column="group_name" property="groupName" jdbcType="VARCHAR" />
+    <result column="remote_filename" property="remoteFileName" jdbcType="VARCHAR" />
+    <result column="upload_user_id" property="uploadUserId" jdbcType="VARCHAR" />
+    <result column="upload_user_name" property="uploadUserName" jdbcType="VARCHAR" />
+    <result column="public_status" property="publicStatus" jdbcType="TINYINT" />
+    <result column="version" property="version" jdbcType="INTEGER" />
+    <result column="source_file_id" property="sourceFileId" jdbcType="VARCHAR" />
+    <result column="create_time" property="createTime" jdbcType="TIMESTAMP" />
+    <result column="update_time" property="updateTime" jdbcType="TIMESTAMP" />
+  </resultMap>
+  
+  <sql id="Base_Column_List" >
+    id, folder_id, company_id, company_name, department_id, department_name, app_id, 
+    postfix, file_type, mime_type, file_size, visit_count, download_count, url, file_name, 
+    group_name, remote_filename, upload_user_id, upload_user_name, public_status, create_time, 
+    update_time
+  </sql>
+
+
+
+  
+</mapper>
